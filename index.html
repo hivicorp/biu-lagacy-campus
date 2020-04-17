@@ -39,30 +39,16 @@
         <input type="button" onclick="check(this.form)" class="button button-full button-s shadow-large button-round-small bg-green1-dark top-10" value="Login">eg: ENG/CVE/12
         </form>
         </div>
+        /* login details */
         <script language="javascript">
             function check(form)/*function to check userid & password*/
             {
             /*the following code checkes whether the entered userid and password are matching*/
-            if(form.userid.value == "ENG/CVE/19")
-              {
-                window.open('engineering/civil/100level.html')/*opens the target page while Id & password matches*/
-              }
-              if(form.userid.value == "ENG/CVE/18")
-              {
-                window.open('engineering/civil/200level.html')/*opens the target page while Id & password matches*/
-              }
-              if(form.userid.value == "ENG/CVE/17")
-              {
-                window.open('engineering/civil/300level.html')/*opens the target page while Id & password matches*/
-              } if(form.userid.value == "ENG/CVE/16")
-              {
-                window.open('engineering/civil/400level.html')/*opens the target page while Id & password matches*/
-              }
-              if(form.userid.value == "ENG/CVE/15")
-              {
-                window.open('engineering/civil/500level.html')/*opens the target page while Id & password matches*/
-              }
-              else
+            if(form.userid.value == "ENG/CVE/19") {window.open('engineering/civil/100level.html')}
+         
+          
+                
+                else
             {
                alert("INVALID MATRICULATION NUMBER")/*displays error message*/
               }
