@@ -2,65 +2,35 @@
 <html lang="en">
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
-<title>BIU app</title>
-<link rel="stylesheet" type="text/css" href="main-data/styles/framework.css">
-<link rel="stylesheet" type="text/css" href="main-data/fonts/css/fontawesome-all.min.css">
+<title>SMART</title>
+<link rel="stylesheet" type="text/css" href="data/styles/framework.css">
+<link rel="stylesheet" type="text/css" href="data/fonts/css/fontawesome-all.min.css">
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_by_pwa.js">
+<link rel="apple-touch-icon" sizes="180x180" href="data/app/icons/icon-192x192.png">
 </head>
 <body class="theme-light" data-background="none" data-highlight="red2">
 <div id="page">
 <div id="page-preloader">
 <div class="loader-main"><div class="preload-spinner border-highlight"></div></div>
 </div>
+<div id="footer-menu" class="footer-menu-5-icons footer-menu-style-1 disabled">
+<a href="data/index.html"><i class="fa fa-home"></i><span>Home</span></a>
+<a href="data/index-components.html"><i class="fa fa-star"></i><span>Features</span></a>
+<a href="data/index-pages.html" class="active-nav"><i class="fa fa-heart"></i><span>Pages</span></a>
+<a href="data/index-search.html"><i class="fa fa-search"></i><span>Search</span></a>
+<a href="#" data-menu="menu-settings"><i class="fa fa-cog"></i><span>Settings</span></a>
+<div class="clear"></div>
+</div>
 <div class="page-content">
 <div class="caption-top">
-<a href="#" data-toggle-theme class="button button-xxs button-round-huge shadow-huge button-center-small bg-green1-dark top-20"><i class="fa fa-lightbulb right-15"></i>SWITCH<i class="fa fa-lightbulb left-15"></i></a>
+<a href="#" data-toggle-theme class="button button-xxs button-round-huge shadow-huge button-center-small bg-green1-dark top-20"><i class="fa fa-lightbulb right-15"></i>Mode<i class="fa fa-lightbulb left-15"></i></a>
 </div>
-<div>
-<a href="#" data-menu="menu-signin" class="cover-button button button-round-huge shadow-large button-full bg-green1-dark left-40 right-40 button-m scale-box">BEGIN</a>
-
-<div>
-    <a href="#" data-menu="menu-signin" class="cover-button button button-round-huge shadow-large button-full bg-green1-dark left-40 right-40 button-m scale-box">BEGIN</a>
-    
-    <div id="menu-signin" class="menu menu-box-bottom menu-box-detached round-medium" data-menu-height="330" data-menu-effect="menu-over">
-        <div class="content">
-        <h1 class="uppercase ultrabold top-20">LOGIN</h1>
-        <p class="font-11 under-heading bottom-20">
-        Enter your Matriculation number.
-        </p>
-        <form name="login">
-        <div class="input-style has-icon input-style-1 input-required">
-        <i class="input-icon fa fa-user-graduate font-11"></i>
-        <span>xxx/xxx/xx</span>
-        <em>(required)</em>
-        <input type="text" name="userid" placeholder="MATRIC NO">
-        </div>
-        <div class="clear"></div>
-        <input type="button" onclick="check(this.form)" class="button button-full button-s shadow-large button-round-small bg-green1-dark top-10" value="Login">eg: ENG/CVE/12
-        </form>
-        </div>
-       
-        <script language="javascript">
-            function check(form)/*function to check userid & password*/
-            {
-            /*login details 100 level*/
-                /*ENGINEERING*/
-                if(form.userid.value == "ENG/CVE/19") {window.open('engineering/civil/100level.html')}
-                if(form.userid.value == "ENG/MEE/19") {window.open('engineering/mechanical/100level.html')}
-                if(form.userid.value == "ENG/EEE/19") {window.open('engineering/electrical-and-electronics/100level.html')}
-         
-          
-                
-                else
-            {
-               alert("INVALID MATRICULATION NUMBER")/*displays error message*/
-              }
-            }
-            </script>
-            
-        </div>
-        
-        
+<div class="cover-wrapper cover-has-buttons">
+<a href="data/index.html" class="cover-button button button-round-huge shadow-large button-full bg-green1-dark left-40 right-40 button-m scale-box">LET'S BEGIN</a>
+<a href="#" class="cover-next color-gray2-dark">Next<i class="fa fa-angle-right left-10"></i></a>
+<a href="#" class="cover-prev color-gray2-dark"><i class="fa fa-angle-left right-10"></i>Previous</a>
 <div class="cover-slider owl-carousel">
 <div data-height="cover" class="caption">
 <div class="caption-top caption-height-70">
@@ -68,8 +38,10 @@
 <div class="caption-bg bg-18"></div>
 </div>
 <div class="caption-bottom bottom-100">
+<h1 class="center-text bolder font-33 bottom-0">SMART</h1>
+<h6 class="center-text thiner font-15 bottom-20 color-highlight">who are you</h6>
 <p class="color-theme boxed-text-huge opacity-80 bottom-50">
-Developing Mankind.
+
 </p>
 </div>
 </div>
@@ -79,10 +51,10 @@ Developing Mankind.
 <div class="caption-bg bg-20"></div>
 </div>
 <div class="caption-bottom bottom-100">
-<h1 class="center-text bolder font-33 bottom-0">Benson Idahosa University</h1>
-<h6 class="center-text thiner font-15 bottom-20 color-highlight">Excellence</h6>
+<h1 class="center-text bolder font-33 bottom-0">Access milions of books</h1>
+<h6 class="center-text thiner font-15 bottom-20 color-highlight">...</h6>
 <p class="color-theme boxed-text-huge opacity-80 bottom-50">
-Change Nigeria.
+Get access to favourite, educational, movitational books and more.
 </p>
 </div>
 </div>
@@ -92,9 +64,10 @@ Change Nigeria.
 <div class="caption-bg bg-21"></div>
 </div>
 <div class="caption-bottom bottom-100">
-<h1 class="center-text bolder font-33 bottom-0">Access Lecture Notes</h1>
+<h1 class="center-text bolder font-33 bottom-0">Super fast servers</h1>
+<h6 class="center-text thiner font-15 bottom-20 color-highlight">...</h6>
 <p class="color-theme boxed-text-huge opacity-80 bottom-50">
-
+with the best servers.
 </p>
 </div>
 </div>
@@ -104,9 +77,10 @@ Change Nigeria.
 <div class="caption-bg bg-28"></div>
 </div>
 <div class="caption-bottom bottom-100">
-<h1 class="center-text bolder font-33 bottom-0">Easy to use</h1>
-<h6 class="center-text thiner font-15 bottom-20 color-highlight">Easy learning</h6>
+<h1 class="center-text bolder font-33 bottom-0">Access numerious free books</h1>
+<h6 class="center-text thiner font-15 bottom-20 color-highlight">...</h6>
 <p class="color-theme boxed-text-huge opacity-80 bottom-50">
+Tons of free books available
 </p>
 </div>
 </div>
@@ -116,17 +90,31 @@ Change Nigeria.
 <div class="caption-bg bg-10"></div>
 </div>
 <div class="caption-bottom bottom-100">
-<h1 class="center-text bolder font-33 bottom-0">campus life options</h1>
-<h6 class="center-text thiner font-15 bottom-20 color-highlight">We care.</h6>
+<h1 class="center-text bolder font-33 bottom-0">Studies made easy</h1>
+<h6 class="center-text thiner font-15 bottom-20 color-highlight">...</h6>
 <p class="color-theme boxed-text-huge opacity-80 bottom-50">
-
+we are here for you.
 </p>
 </div>
 </div>
 </div>
 </div>
 </div>
+<div id="menu-install-pwa-android" class="menu menu-box-bottom menu-box-detached round-large" data-menu-height="340" data-menu-effect="menu-parallax">
+<div class="boxed-text-huge top-25">
+<img class="round-medium center-horizontal" src="data/app/icons/icon-128x128.png" alt="img" width="90">
+<h4 class="center-text bolder top-20 bottom-10">Add Sticky on your Home Screen</h4>
+<p>
+Install Sticky on your home screen, and access it just like a regular app. It really is that simple!
+</p>
+<a href="#" class="pwa-install button button-xs button-round-medium button-center-large shadow-large bg-highlight bottom-0">Add to Home Screen</a><br>
+<a href="#" class="pwa-dismiss close-menu center-text color-gray2-light uppercase ultrabold opacity-60 under-heading font-10">Maybe later</a>
+<div class="clear"></div>
 </div>
-<script type="text/javascript" src="main-data/scripts/jquery.js"></script>
-<script type="text/javascript" src="main-data/scripts/plugins.js"></script>
-<script type="text/javascript" src="main-data/scripts/custom.js"></script>
+</div>
+</div>
+<div class="menu-hider"></div>
+</div>
+<script type="text/javascript" src="data/scripts/jquery.js"></script>
+<script type="text/javascript" src="data/scripts/plugins.js"></script>
+<script type="text/javascript" src="data/scripts/custom.js"></script>
